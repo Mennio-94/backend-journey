@@ -1,3 +1,5 @@
+Gerez les paquets de python a l'aide de pip :
+
 1- Les paquest python :
 
 - Les paquets Python sont des regroupements de modules (fichiers .py) créés par la communauté pour éviter de réinventer la roue. Il faut les distinguer de la bibliothèque standard, qui est livrée avec Python et utilisable sans installation. Les paquets externes, eux, doivent être installés séparément. Un exemple classique : le module csv est intégré, tandis que requests est un paquet externe.
