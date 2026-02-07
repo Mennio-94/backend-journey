@@ -71,6 +71,51 @@ A. Créez des données avec Python :
 
     A. 3-Enregistrez vos données avec des variables
 
+        # Résumé du cours : Enregistrez vos données avec des variables
+
+            ## 1. Qu'est-ce qu'une variable ?
+
+            Une variable est comme un **carton de déménagement** : elle stocke une donnée et porte un nom pour la retrouver facilement. Elle est composée de trois éléments : un **nom**, un **type** (vu au chapitre suivant) et une **valeur**.
+
+            ```python
+            livre = "Gatsby le Magnifique"
+            ```
+            Ici, `livre` = nom, `"Gatsby le Magnifique"` = valeur.
+
+            ## 2. Modifier une variable
+
+            On réassigne simplement une nouvelle valeur avec l'opérateur `=` :
+
+            ```python
+            livre = "Gatsby le Magnifique"
+            livre = "Beloved"
+            print(livre)  # → Beloved
+            ```
+
+            La dernière valeur assignée écrase les précédentes. Une variable est un raccourci vers une valeur en **mémoire vive**.
+
+            ## 3. Afficher des variables avec les f-strings
+
+            La **f-string** permet d'insérer des variables dans une chaîne de caractères en les plaçant entre accolades `{}`, précédée d'un `f` :
+
+            ```python
+            nom = "Dupont"
+            prenom = "Jean"
+            age = 30
+            print(f"Bonjour, je m'appelle {prenom} {nom} et j'ai {age} ans.")
+            # → Bonjour, je m'appelle Jean Dupont et j'ai 30 ans.
+            ```
+
+            ## 4. Règles de nommage des variables
+
+            - **Noms descriptifs** : `quantite_en_stock` plutôt que `qte`
+            - **Mots complets** : `revenu_annuel` plutôt que `rev_annuel`
+            - **Convention snake_case** (PEP8) : mots séparés par des `_` → `nombre_de_chats`
+            - **Commencer** par une lettre ou `_`, jamais par un chiffre
+            - **Uniquement** lettres, chiffres et `_` — **pas d'accents** ni de caractères spéciaux
+            - **Sensible à la casse** : `age`, `Age` et `AGE` sont trois variables différentes
+
+
     A. 4-Classez des données avec les types de données
 
     A. 5-Enregistrez des groupes de données avec les listes
