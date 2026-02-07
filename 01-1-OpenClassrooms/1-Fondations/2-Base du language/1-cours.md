@@ -116,7 +116,54 @@ A. Créez des données avec Python :
             - **Sensible à la casse** : `age`, `Age` et `AGE` sont trois variables différentes
 
 
-    A. 4-Classez des données avec les types de données
+    A. 4-Classez des données avec les types de données :
+
+    # Résumé du cours : Classez des données avec les types de données
+
+        ## 1. Qu'est-ce qu'un type de données ?
+
+        Le type d'une variable est déterminé par **la nature de sa valeur**. Python possède 4 types **primitifs** :
+
+        ## 2. Les types numériques
+
+        **Entiers (int)** : nombres entiers sans décimale → `1`, `4`, `3934`
+
+        **Virgules flottantes (float)** : nombres décimaux → `3.14`, `99.9`
+
+        ⚠️ `100` est un entier, `100.0` est un float.
+        ⚠️ En Python, on utilise le **point** (et non la virgule) pour les décimales : `12.4`
+
+        **Opérateurs arithmétiques :**
+        - `+` addition, `-` soustraction, `*` multiplication, `/` division, `%` modulo (reste de la division)
+
+        ## 3. Les chaînes de caractères (str)
+
+        Du texte entouré de guillemets simples `'...'` ou doubles `"..."` :
+
+        ```python
+        salutations = "bonjour !"
+        prenom = "Sam"
+        ```
+
+        ⚠️ `912` = entier, mais `"912"` ou `'912'` = chaîne de caractères (à cause des guillemets).
+
+        ## 4. Les booléens (bool)
+
+        Seulement deux valeurs possibles : **`True`** (vrai) ou **`False`** (faux).
+
+        ```python
+        temps_ensoleille = True
+        ```
+
+        Très utiles pour la logique du code (conditions, etc.).
+
+        ## 5. La fonction `type()`
+
+        Permet de vérifier le type d'une variable :
+
+        ```python
+        type(age)  # → <class 'int'>
+        ```
 
     A. 5-Enregistrez des groupes de données avec les listes
 
