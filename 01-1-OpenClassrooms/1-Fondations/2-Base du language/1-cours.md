@@ -165,6 +165,70 @@ A. Créez des données avec Python :
         type(age)  # → <class 'int'>
         ```
 
-    A. 5-Enregistrez des groupes de données avec les listes
+    A. 5-Enregistrez des groupes de données avec les listes :
+        # Résumé du cours : Enregistrez des groupes de données avec les listes
+
+            ## 1. Qu'est-ce qu'une liste ?
+
+            Une liste permet de stocker **une collection d'éléments** dans une seule variable, en utilisant des crochets `[]`. Elle accepte **tous les types de données**, même mélangés.
+
+            ```python
+            plateformes_sociales = ["Facebook", "Instagram", "Snapchat", "Twitter"]
+            ```
+
+            ## 2. Accéder aux éléments
+
+            Chaque élément a un **indice** commençant à **0** :
+
+            ```python
+            plateformes_sociales[0]   # → "Facebook"
+            plateformes_sociales[1]   # → "Instagram"
+            plateformes_sociales[-1]  # → "Twitter" (dernier élément)
+            ```
+
+            Fonctionne aussi avec les **chaînes de caractères** (qui sont des listes de caractères) :
+            ```python
+            langage = "PYTHON"
+            langage[2]   # → "T"
+            langage[-4]  # → "T"
+            ```
+
+            ## 3. Modifier un élément
+
+            On utilise l'indice + l'opérateur `=` :
+            ```python
+            plateformes_sociales[2] = "LinkedIn"
+            ```
+
+            ## 4. Méthodes et fonctions des listes
+
+            | Méthode / Fonction | Action | Exemple |
+            |---------|--------|---------|
+            | `append()` | Ajoute un élément **à la fin** | `fruits.append("kiwi")` |
+            | `remove()` | Retire la **première occurrence** d'un élément | `fruits.remove("orange")` |
+            | `sort()` | Trie (alphabétique ou numérique) | `fruits.sort()` |
+            | `len()` | Renvoie la **longueur** (fonction, pas méthode) | `len(fruits)` |
+            | `extend()` | Ajoute **plusieurs éléments** à la fin | `fruits.extend(["mangue", "cerise"])` |
+            | `insert()` | Insère un élément à une **position précise** | `fruits.insert(1, "kiwi")` → insère à l'indice 1 |
+            | `pop()` | Supprime et **renvoie** l'élément à une position donnée (ou le dernier si aucun indice) | `fruits.pop()` ou `fruits.pop(2)` |
+            | `index()` | Renvoie l'indice de la **première occurrence** d'un élément | `fruits.index("banane")` |
+            | `count()` | Renvoie le **nombre d'occurrences** d'un élément | `fruits.count("pomme")` |
+            | `reverse()` | **Inverse** l'ordre des éléments | `fruits.reverse()` |
+
+            ⚠️ Ne pas accéder à un indice ≥ taille de la liste → **IndexError**
+
+            ## 5. Les tuples
+
+            Comme les listes mais avec des parenthèses `()` et **immuables** (non modifiables après création) :
+            ```python
+            mon_tuple = ("Facebook", "Instagram", "TikTok")
+            ```
+
+            ## 6. Chercher un élément avec `in`
+
+            ```python
+            5 in [1, 2, 3, 4, 5]  # → True
+            8 in [1, 2, 3, 4, 5]  # → False
+            ```
 
     A. 6-Enregistrez des données complexes avec des dictionnaires
