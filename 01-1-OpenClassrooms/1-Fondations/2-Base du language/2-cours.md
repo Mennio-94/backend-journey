@@ -83,6 +83,95 @@ B. Gérez la logique du programme dans python :
 
 
     B. 2-Répétez des tâches facilement à l’aide de boucles
+        # Résumé du cours : Répétez des tâches facilement à l'aide de boucles
+
+            ## 1. Pourquoi utiliser des boucles ?
+
+            Les boucles permettent de **répéter un ensemble d'instructions** plusieurs fois, soit un nombre connu de fois, soit jusqu'à ce qu'une condition soit remplie.
+
+            ## 2. La boucle for
+
+            Itère sur une **séquence** (liste, tuple, dictionnaire, chaîne de caractères) :
+
+            ```python
+            races_de_chien = ["golden retriever", "chihuahua", "terrier", "carlin"]
+            for chien in races_de_chien:
+                print(chien)
+            ```
+
+            ### Fonctionnement de la boucle for (schéma) :
+            ```
+            Début → Pour chaque élément en séquence
+                        ↓
+                ┌─ Dernier élément atteint ? ──Vrai──→ Fin de la boucle For
+                │       ↓ Faux
+                │   Instructions
+                └───────┘ (retour au test)
+            ```
+            → Tant que le dernier élément n'est pas atteint, la boucle exécute les instructions puis passe à l'élément suivant.
+
+            ### La fonction range()
+
+            Permet de boucler un **nombre précis** de fois :
+
+            ```python
+            for x in range(5):
+                print(x)  # affiche 0, 1, 2, 3, 4
+            ```
+
+            - `range(5)` → de 0 à 4
+            - `range(4, 10)` → de 4 à 9
+            - Par défaut, commence à 0
+
+            ## 3. La boucle while
+
+            S'exécute **tant qu'une condition est vraie** :
+
+            ```python
+            capacite_actuelle = 3
+            while capacite_actuelle < 10:
+                capacite_actuelle += 1  # s'exécute 7 fois
+            ```
+
+            ### Fonctionnement de la boucle while (schéma) :
+            ```
+            Début → Entrer dans la boucle while
+                        ↓
+                ┌─ Tester l'expression ──Faux──→ Fin de la boucle While
+                │       ↓ Vrai
+                │   Instructions
+                └───────┘ (retour au test)
+            ```
+            → Tant que l'expression testée est **Vraie**, les instructions s'exécutent. Dès qu'elle devient **Fausse**, la boucle s'arrête.
+
+            ⚠️ **Boucles infinies** : si la condition ne devient jamais fausse, la boucle tourne indéfiniment.
+            ```python
+            x = 0
+            while x != 5:
+                x += 2  # x vaut 0, 2, 4, 6... jamais 5 !
+            ```
+
+            ### Quand utiliser quoi ?
+            - **for** : quand on connaît le nombre d'itérations à l'avance
+            - **while** : quand on ne le connaît pas et qu'on attend qu'une condition soit remplie
+
+            ## 4. Les mots-clés break et continue
+
+            **`break`** : **interrompt** la boucle prématurément
+            ```python
+            for i in range(10):
+                if i == 5:
+                    break
+                print(i)  # affiche 0, 1, 2, 3, 4
+            ```
+
+            **`continue`** : **saute** l'itération en cours et passe à la suivante
+            ```python
+            for element in [1, 2, 3, 4, 5]:
+                if element == 3:
+                    continue
+                print(element)  # affiche 1, 2, 4, 5
+            ```
 
     B. 3-Regroupez des tâches en utilisant des fonctions
 
