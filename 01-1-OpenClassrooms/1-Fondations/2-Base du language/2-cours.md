@@ -175,4 +175,38 @@ B. Gérez la logique du programme dans python :
 
     B. 3-Regroupez des tâches en utilisant des fonctions
 
+        # Résumé : Les fonctions en Python
+
+            Une **fonction** est un bloc de code nommé et réutilisable qui permet d'organiser son programme en petites sections claires. On la définit avec le mot-clé `def`.
+
+            ## Les 3 types de fonctions
+
+            **1. Sans paramètres** — un simple bloc qu'on exécute à la demande :
+            ```python
+            def dire_bonjour():
+                print("Bonjour !")
+            ```
+
+            **2. Avec paramètres** — on lui passe des valeurs pour adapter son comportement :
+            ```python
+            def afficher_nom(nom, prenom):
+                print(f"{prenom} {nom}")
+            ```
+
+            **3. Avec valeur de retour** — elle renvoie un résultat exploitable grâce à `return` :
+            ```python
+            def somme(a, b):
+                return a + b
+
+            resultat = somme(2, 3)  # resultat vaut 5
+            ```
+
+            > 💡 Une fonction peut aussi renvoyer **plusieurs valeurs** d'un coup (sous forme de tuple) en les séparant par des virgules après `return`.
+
+            ## Pourquoi utiliser des fonctions ?
+
+            - **Éviter la répétition** : on écrit le code une fois, on l'appelle autant qu'on veut.
+            - **Clarifier la structure** : chaque fonction a un rôle précis, le programme devient plus lisible.
+            - **Faciliter la maintenance** : corriger ou modifier un comportement se fait à un seul endroit.
+
     B. 4-Écrivez du code en évitant les erreurs courantes
