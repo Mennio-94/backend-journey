@@ -210,3 +210,39 @@ B. Gérez la logique du programme dans python :
             - **Faciliter la maintenance** : corriger ou modifier un comportement se fait à un seul endroit.
 
     B. 4-Écrivez du code en évitant les erreurs courantes
+
+    # Résumé : Écrire du code propre et éviter les erreurs courantes
+
+        ## Les 4 grands principes
+
+        **1. DRY (Don't Repeat Yourself)**
+        Ne copiez-collez jamais du code. Si vous répétez des lignes, transformez-les en **fonction**. Cela rend le code plus court, plus clair et plus facile à modifier.
+
+        **2. Responsabilité unique**
+        Chaque fonction ne doit faire **qu'une seule chose**. Plutôt qu'une fonction `calculer_et_sauvegarder()`, séparez en `calculer()` et `sauvegarder()`. Cela facilite le débogage et la compréhension.
+
+        **3. Commenter et documenter**
+        - **Commentaires** (`#`) : rappels courts sur ce que fait un bout de code. À garder à jour !
+        - **Docstrings** (`"""..."""`) : documentation placée au début d'une fonction, décrivant ses paramètres et sa valeur de retour. Accessible via `help()`.
+
+        ```python
+        def somme(a, b):
+            """Retourne la somme de a et b."""
+            return a + b
+        ```
+
+        **4. Gérer les erreurs avec `try/except`**
+        Plutôt que de laisser le programme planter, on anticipe les erreurs :
+
+        ```python
+        try:
+            x = int(input("Entrez un nombre : "))
+        except ValueError:
+            print("Ce n'est pas un nombre valide !")
+        ```
+
+        ## Les standards : PEP 8 et PEP 20
+
+        Python a un guide de style officiel (**PEP 8**) et une philosophie résumée dans le **PEP 20** (« Zen de Python »), dont les idées clés sont : privilégier l'**explicite**, la **simplicité** et la **lisibilité**.
+
+        > 💡 On lit du code bien plus souvent qu'on n'en écrit — d'où l'importance de le rendre clair pour soi-même *et* pour les autres.
