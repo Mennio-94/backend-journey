@@ -232,3 +232,68 @@ A. Créez des données avec Python :
             ```
 
     A. 6-Enregistrez des données complexes avec des dictionnaires
+        # Résumé du cours : Gérez des données complexes avec les dictionnaires
+
+            ## 1. Qu'est-ce qu'un dictionnaire ?
+
+            Un dictionnaire stocke des données sous forme de **paires clé-valeur**, entre accolades `{}`. Chaque clé doit être **unique**.
+
+            ```python
+            nouvelle_campagne = {
+                "responsable": "Jeanne d'Arc",
+                "nom": "Campagne chiens",
+                "date_debut": "01/01/2020",
+                "influenceurs": ["@MonAmourDeChien", "@MeilleuresFriandises"]
+            }
+            ```
+
+            ## 2. Créer un dictionnaire
+
+            Deux façons :
+            ```python
+            # Directement avec des valeurs
+            dico = {"clé1": "valeur1", "clé2": "valeur2"}
+
+            # Vide puis rempli progressivement
+            dico = {}  # ou dict()
+            dico["facebook"] = 3.4
+            dico["instagram"] = 1.2
+            ```
+
+            ## 3. Accéder à une valeur
+
+            On utilise la **clé** entre crochets :
+            ```python
+            nouvelle_campagne["responsable"]  # → "Jeanne d'Arc"
+            ```
+
+            ## 4. Opérations courantes
+
+            **Ajouter / modifier** une paire :
+            ```python
+            dico["nouvelle_clé"] = "valeur"  # ajoute si la clé n'existe pas, écrase sinon
+            ```
+
+            **Supprimer** une paire :
+            ```python
+            del dico["clé"]      # avec le mot-clé del
+            dico.pop("clé")      # avec la méthode pop()
+            ```
+
+            ## 5. Méthodes des dictionnaires
+
+            | Méthode | Action |
+            |---------|--------|
+            | `keys()` | Retourne toutes les **clés** |
+            | `values()` | Retourne toutes les **valeurs** |
+            | `items()` | Retourne tous les couples **(clé, valeur)** |
+            | `get(clé)` | Retourne la valeur associée (ou `None` si absente) |
+            | `pop(clé)` | Supprime la clé et **retourne** sa valeur |
+            | `clear()` | Supprime **tous** les éléments |
+
+            ## 6. Vérifier l'existence d'une clé avec `in`
+
+            ```python
+            "poids" in infos_labradoodle  # → True
+            "race" in infos_labradoodle   # → False
+            ```
